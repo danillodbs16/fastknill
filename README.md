@@ -17,7 +17,6 @@ This work is inspired by the proposed new methods for computations of cliques in
 - `fastknill.pyx`
 - `compiler.py`
 - `setup.py`
-- `Example.ipynb`
 
 ## Python version: 
     3.8.5

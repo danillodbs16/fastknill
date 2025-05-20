@@ -1,0 +1,16 @@
+Academic Use License
+
+Copyright (c) 2025 Danillo Barros de Souza (ORCID: https://orcid.org/0000-0002-7792-8862)
+
+Permission is granted to use, copy, modify, and distribute this software **solely for academic research and educational purposes**, subject to the following conditions:
+
+1. This license applies only to academic institutions, students, and researchers engaged in non-commercial academic work.
+2. Use of this software for commercial purposes, including but not limited to product development, service offerings, or internal business operations, is strictly prohibited without prior written permission from the author.
+3. The above copyright notice and this license must be included in all copies or substantial portions of the software.
+4. Any publications, presentations, or works that make use of this software must cite the original author:  
+   **Danillo Barros de Souza**  
+   ORCID: https://orcid.org/0000-0002-7792-8862
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+For any questions regarding academic usage or to request commercial licensing, please contact the author.

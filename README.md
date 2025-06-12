@@ -1,4 +1,4 @@
-# FastKnill - An alternative fast computation of Euler charactetistics and Knill curvature from networks
+# FastKnill - An alternative fast computation of Euler characteristics and Knill curvature from networks
 
 ***
    **Author:** Danillo Barros de Souza

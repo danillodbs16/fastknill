@@ -50,7 +50,7 @@ pip install .
 After successful compilation, the generated `fastknill` file can be imported as a package, for instance:
 
 ```python
-import fastforman as fk
+import fastknill as fk
 ```
 ## Functions:
 

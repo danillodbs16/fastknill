@@ -108,5 +108,6 @@ danillo.dbs16@gmail.com, dbarros@bcamath.org
 ## References: 
 
 [1] Alternative set-theoretical algorithms for efficient computations of cliques in Vietoris-Rips complexes, Barros de Souza, Danillo; da Cunha, Jontatas, A.N. Santos, Fernando; Desroches, Mathieu; Jost, Juergen & Rodigues, Serafim; [link](https://arxiv.org/abs/2502.14593)
+
 [2] Efficient set-theoretic algorithms for computing high-order Forman-Ricci curvature on abstract simplicial complexes; Barros de Souza, Danillo; da Cunha, Jontatas, A.N. Santos, Fernando; Jost, Juergen & Rodigues, Serafim; [Link](https://royalsocietypublishing.org/doi/10.1098/rspa.2024.0364)
 

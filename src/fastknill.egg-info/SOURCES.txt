@@ -1,0 +1,15 @@
+LICENSE
+License.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/fastknill/__init__.py
+src/fastknill/compiler.py
+src/fastknill/fastknill.c
+src/fastknill/fastknill.pyx
+src/fastknill.egg-info/PKG-INFO
+src/fastknill.egg-info/SOURCES.txt
+src/fastknill.egg-info/dependency_links.txt
+src/fastknill.egg-info/requires.txt
+src/fastknill.egg-info/top_level.txt

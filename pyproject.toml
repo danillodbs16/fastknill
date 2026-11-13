@@ -1,0 +1,36 @@
+
+[build-system]
+requires = [
+    "setuptools>=68",
+    "wheel",
+    "Cython>=3.0"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastknill"
+version = "0.2.0"
+description = "Fast computation of Euler characteristics and Knill curvature from networks"
+readme = "README.md"
+requires-python = ">=3.8.5"
+license = {file = "License.txt"}
+authors = [
+    {name = "Danillo Barros de Souza"}
+]
+dependencies = [
+    "numpy",
+    "networkx",
+    "scipy",
+    "scikit-learn"
+]
+
+[project.urls]
+Homepage = "https://github.com/danillodbs16/fastknill"
+Repository = "https://github.com/danillodbs16/fastknill"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]

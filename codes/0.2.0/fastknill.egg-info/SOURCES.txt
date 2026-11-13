@@ -1,0 +1,8 @@
+README.md
+fastknill.pyx
+setup.py
+fastknill.egg-info/PKG-INFO
+fastknill.egg-info/SOURCES.txt
+fastknill.egg-info/dependency_links.txt
+fastknill.egg-info/requires.txt
+fastknill.egg-info/top_level.txt

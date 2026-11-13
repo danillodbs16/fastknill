@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: fastknill
+Version: 0.2.0
+Summary: fastknill - An alternative fast computation of Euler charactetistics and Knill curvature from networks
+Home-page: https://github.com/danillodbs16/fastknill
+Author: Danillo Barros de Souza
+Author-email: danillo.dbs16@gmail.com
+Requires-Dist: numpy
+Requires-Dist: cython
+Requires-Dist: scikit-learn
+Requires-Dist: scipy

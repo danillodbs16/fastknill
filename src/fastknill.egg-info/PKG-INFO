@@ -1,0 +1,148 @@
+Metadata-Version: 2.4
+Name: fastknill
+Version: 0.2.0
+Summary: Fast computation of Euler characteristics and Knill curvature from networks
+Author: Danillo Barros de Souza
+License: Academic Use License
+        
+        Copyright (c) 2025 Danillo Barros de Souza (ORCID: https://orcid.org/0000-0002-7792-8862)
+        
+        Permission is granted to use, copy, modify, and distribute this software **solely for academic research and educational purposes**, subject to the following conditions:
+        
+        1. This license applies only to academic institutions, students, and researchers engaged in non-commercial academic work.
+        2. Use of this software for commercial purposes, including but not limited to product development, service offerings, or internal business operations, is strictly prohibited without prior written permission from the author.
+        3. The above copyright notice and this license must be included in all copies or substantial portions of the software.
+        4. Any publications, presentations, or works that make use of this software must cite the original author:  
+           **Danillo Barros de Souza**  
+           ORCID: https://orcid.org/0000-0002-7792-8862
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+        For any questions regarding academic usage or to request commercial licensing, please contact the author.
+        
+Project-URL: Homepage, https://github.com/danillodbs16/fastknill
+Project-URL: Repository, https://github.com/danillodbs16/fastknill
+Requires-Python: >=3.8.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: networkx
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Dynamic: license-file
+
+# FastKnill - An alternative fast computation of Euler characteristics and Knill curvature from networks
+
+***
+   **Author:** Danillo Barros de Souza
+   -- 
+   **ORCID: [0000-0002-7792-8862](https://orcid.org/0000-0002-7762-8862)**
+
+***
+This work is inspired by the proposed new methods for computations of cliques in Vietoris-Rips complexes [[1]](https://arxiv.org/abs/2502.14593). We provide a set-theoretical Python coding for efficiently computing the Knill curvature and the Euler characteristics for simplicial complexes. For alternative geometric computations, see also [[2]](https://github.com/danillodbs16/fastforman)
+
+## Current version:
+  0.2.0
+
+
+## Content:
+
+- `fastknill.pyx`
+- `compiler.py`
+- `setup.py`
+
+## Python version: 
+    3.8.5
+## Package requirement:
+
+- `numpy`
+- `networkx`
+- `cython`
+- `scikit-learn`
+
+
+## Installation:
+
+The files `fastknill.pyx`, `compiler.py` and `setup.py` must be placed at the same directory.
+
+ ### Local installation:
+To this purpose, the user will need to compile the file `compiler.py` in cython by running the command:
+
+```
+python3 compiler.py build_ext --inplace
+```
+
+### Global installation:
+
+Run `setup.py` by executing the command:
+
+```
+pip install .
+```
+
+After successful compilation, the generated `fastknill` file can be imported as a package, for instance:
+
+```python
+import fastknill as fk
+```
+## Functions:
+
+- ``compute_knill``:
+
+  ***Input:*** 
+        
+    - `D`, can be:
+       - A `dictionary` in which the keys are integer numbers from 0 to len(D)-1 and the values are the N-dimensional points;
+
+       - A symmetric `numpy.matrix` of float numbers;
+
+       - A simple undirected `nx.Graph` that may include the feature `weights`on edges attributes;
+     
+       - A `string` of the `graph/graphml` file in a directory.
+
+    - `cutoff`: Float number for the threshold distance between points.
+    - `n_neighbors`: Interger, the number of the nearest neighbours to consider. If None, it is not applied.
+    - `max_dim`: Integer, the maximum simplex dimension to compute FRC.
+    - `metric`: string, the metric in which the pairwise distance is computed. If D is not a dictionary, this parameter is ignored.
+    - `mapped_nodes`: True or False - if the mapping of the original node labels is kept.
+   
+    
+   ***Output:*** 
+     
+   A dictionary whose keys are the noded and the values are the Knill curvature of each node.
+    
+- ``compute_euler``:
+
+  ***Input:*** 
+        
+    - `D`, can be:
+       - A `dictionary` in which the keys are integer numbers from 0 to len(D)-1 and the values are the N-dimensional points;
+
+       - A symmetric `numpy.matrix` of float numbers;
+
+       - A simple undirected `nx.Graph` that may include the feature `weights` on edges attributes;
+     
+       - A `string` of the `graph/graphml` file in a directory.
+
+    - `cutoff`: Float number for the threshold distance between points.
+    - `n_neighbors`: Integer, the number of the nearest neighbours to consider. If None, it is not applied.
+    - `metric`: string, the metric in which the pairwise distance is computed. If D is not a dictionary, this parameter is ignored.
+    - `max_dim`: Integer, the maximum simplex dimension to compute FRC.
+    - `mapped_nodes`: True or False - if the mapping of the original node labels is kept.
+   
+    
+   ***Output:*** 
+     
+   An integer, the Euler characteristics of the input network.
+    
+
+## Contact and Support:
+
+danillo.dbs16@gmail.com, danillo.bsouza@proton.me
+
+## References: 
+
+[1] Alternative set-theoretical algorithms for efficient computations of cliques in Vietoris-Rips complexes, Barros de Souza, Danillo; da Cunha, Jontatas, A.N. Santos, Fernando; Desroches, Mathieu & Rodigues, Serafim; [link](https://arxiv.org/abs/2502.14593)
+
+[2] Efficient set-theoretic algorithms for computing high-order Forman-Ricci curvature on abstract simplicial complexes; Barros de Souza, Danillo; da Cunha, Jontatas, A.N. Santos, Fernando; Jost, Juergen & Rodigues, Serafim; [Link](https://royalsocietypublishing.org/doi/10.1098/rspa.2024.0364)
+

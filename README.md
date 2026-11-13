@@ -105,7 +105,7 @@ import fastknill as fk
 
 ## Contact and Support:
 
-danillo.dbs16@gmail.com, dbarros@bcamath.org
+danillo.dbs16@gmail.com, danillo.bsouza@proton.me
 
 ## References: 
 

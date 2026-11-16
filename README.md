@@ -1,6 +1,7 @@
 # FastKnill - An alternative fast computation of Euler characteristics and Knill curvature from networks
 ***
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
+[![Total Downloads](https://static.pepy.tech/badge/fastknill)](https://pepy.tech/projects/fastknill)
 
 ***
    **Author:** Danillo Barros de Souza

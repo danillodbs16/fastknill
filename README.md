@@ -4,7 +4,7 @@
 [![Total Downloads](https://static.pepy.tech/personalized-badge/fastknill?period=total&units=international_system&left_color=black&right_color=brightgreen&left_text=Downloads)](https://pepy.tech/projects/fastknill)
 
 ***
-   **Author:** Danillo Barros de Souza
+   **Author:** [Danillo Barros de Souza](https://www.linkedin.com/in/souza-danillo/)
    -- 
    **ORCID: [0000-0002-7792-8862](https://orcid.org/0000-0002-7762-8862)**
 
